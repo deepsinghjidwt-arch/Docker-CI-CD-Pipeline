@@ -1,20 +1,20 @@
 
 ---
 
-## 🚀 Features
+# Features
 
-- ✅ 3-Tier Architecture (Frontend, Backend, Database)
-- ✅ High Availability using multiple container replicas
-- ✅ Stateless backend design
-- ✅ Persistent database using Docker volumes
-- ✅ Redis caching for performance improvement
-- ✅ NGINX load balancing & reverse proxy
-- ✅ Automated CI/CD pipeline using Jenkins
-- ✅ Production-ready & Kubernetes-ready design
+- 3-Tier Architecture (Frontend, Backend, Database)
+-  High Availability using multiple container replicas
+-  Stateless backend design
+-  Persistent database using Docker volumes
+-  Redis caching for performance improvement
+-  NGINX load balancing & reverse proxy
+-  Automated CI/CD pipeline using Jenkins
+-  Production-ready & Kubernetes-ready design
 
 ---
 
-## 🔁 CI/CD Pipeline Flow (Jenkins)
+# CI/CD Pipeline Flow (Jenkins)
 
 1. Code pushed to GitHub
 2. Jenkins pulls latest code
@@ -24,7 +24,7 @@
 
 ---
 
-## 📦 Docker Compose Highlights
+# Docker Compose Highlights
 
 - Multiple services defined in a single file
 - Isolated network for internal communication
@@ -34,7 +34,7 @@
 
 ---
 
-## 🌐 NGINX Responsibilities
+#NGINX Responsibilities
 
 - Acts as a **single entry point**
 - Routes traffic to frontend & backend
@@ -43,7 +43,7 @@
 
 ---
 
-## 📈 Scalability & High Availability
+# Scalability & High Availability
 
 - Backend & frontend containers are **stateless**
 - Multiple replicas ensure fault tolerance
@@ -51,7 +51,7 @@
 
 ---
 
-## 🔐 Security Best Practices
+# Security Best Practices
 
 - Environment variables for credentials
 - Network isolation using Docker networks
@@ -60,13 +60,11 @@
 
 ---
 
-## 🧑‍💻 Author
+# Author
 
 **Deepak Singh Bisht**  
 DevOps / Cloud Enthusiast  
 
 ---
-
-## 📌 Interview Summary (One-Line)
 
 > Designed a scalable, highly available, containerized 3-tier application with Docker, NGINX load balancing, Redis caching, and Jenkins CI/CD, following DevOps and system design best practices.
