@@ -1,0 +1,46 @@
+pipeline {
+    agent any
+
+    environment {
+        REGISTRY = "docker.io"
+        IMAGE_BACKEND = "yourname/backend-app"
+        IMAGE_FRONTEND = "yourname/frontend-app"
+    }
+
+    stages {
+
+        stage('Checkout Code') {
+            steps {
+                git 'https://github.com/deepsinghjidwt-arch/Docker-CI-CD-Pipeline.git'
+            }
+        }
+
+        stage('Build Docker Images') {
+            steps {
+                sh '''
+                docker build -t $IMAGE_BACKEND:latest ./backend
+                docker build -t $IMAGE_FRONTEND:latest ./frontend
+                '''
+            }
+        }
+
+        stage('Push Images') {
+            steps {
+                sh '''
+                docker push $IMAGE_BACKEND:latest
+                docker push $IMAGE_FRONTEND:latest
+                '''
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                sh '''
+                docker-compose down
+                docker-compose up -d
+                '''
+            }
+        }
+    }
+
+}
